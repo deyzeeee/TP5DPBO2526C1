@@ -54,13 +54,10 @@ classDiagram
     PeopleMenu --> Database : memakai
 ```
 
-- `PeopleMenu` mengurus tampilan (form dan tabel) serta CRUD.
-- `Database` khusus mengurus koneksi ke MySQL dan menjalankan query. `PeopleMenu` tidak menyentuh JDBC secara langsung, semua query lewat class ini.
-- `Person` tidak dipakai lagi karena data sekarang dibaca langsung dari hasil query.
-
 ### Data yang digunakan
 
 Aplikasi terhubung ke database `db_people` dan membaca tabel `person`. Kolom yang digunakan kode adalah `id`, `nama`, `thn_lahir`, `kategori`, dan `tinggi`.
+
 ### Tampilan Program
 
 Form berisi input ID, Nama, Tahun Lahir, Kategori, dan Tinggi Badan, lalu ada tombol Add/Update, Delete, dan Cancel. Di bawahnya ada tabel yang menampilkan semua data dari database dengan kolom No, ID, Nama, Tahun Lahir, Kategori, dan Tinggi (cm).
